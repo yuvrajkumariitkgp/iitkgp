@@ -1,0 +1,786 @@
+<!doctype html>
+<html>
+<head>
+<title>Indian Institute of Technology Kharagpur</title>
+<link rel="icon" type="image/jpg" href="kgplogo.jpg" />
+<style type="text/css">
+a {color:inherit;
+	text-decoration:none;
+}
+.scroll_content_event{
+	overflow: scroll;
+	width: 100%;
+	height:500px;
+}
+
+	#home{width:100%;
+			height:40px;
+			background-color: #3D59AB;
+			margin-top:-10px;
+			margin-left:-8px;
+			margin-right:-8px;
+			color:white;}
+	#home1{position:absolute;
+			left:150px;
+			}
+	#div1{width:100%;
+			height:180px;
+			background-color:#162252;
+			margin-top:-23.4px;
+			margin-left:-8px;
+			margin-right:-8px;
+			
+	}
+#div1 ul {list-style:none;
+		margin:0px;
+		padding:0px;
+		z-index:1;
+		}
+#div1 ul li{background-color:#162252;
+		width:280px;
+		height:38px;
+		color:white;
+		line-height:38px;
+		text-align:center;
+		float:left;
+		z-index:1;
+		}
+#div1 ul li a{display: block;
+				z-index:1;
+			}
+#div1 ul ul{display:none;
+	z-index:1;
+}
+#div1	ul li:hover > ul{
+			display:block;
+			z-index:1;
+		}
+#div1 ul ul li{
+			background-color:#3D59AB ;
+			z-index:1;
+}
+#div1 ul ul ul{
+	margin-left:280px;
+	margin-top:-36px;
+	z-index:1;
+}
+* {box-sizing:border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1484px;
+  position: relative;
+  margin-top: -20px;
+margin-left:-8px;
+margin-right:-8px;
+}
+
+.mySlides {
+    display: none;
+    
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding:20px;
+  color: white;
+  font-weight: bold;		
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+	#menu{width:100%;
+			height:38px;
+			background-color:goldenrod;
+			margin-top:-44px;
+			margin-left:-8px;
+			margin-right:-8px;
+	}
+	#menu ul{
+			list-style:none;
+	}
+	#menu ul li{
+				background-color:goldenrod;
+				border:1px solid black;
+		width:350px;
+		height:38px;
+		color:white;
+		line-height:38px;
+		text-align:center;
+		float:left;
+	}
+	#menu ul li a{
+				color:black;
+				display:block;
+		}
+	#menu ul li a:hover{
+					color:white;
+					background-color:cornflowerblue;
+	}
+.left_side 
+      {
+     float: left;
+     padding: 0 0 25px 15px;
+     width: 650px;
+     border: none;
+     }
+.right_side 
+     {
+     float:right;
+     width:650px;
+     color: #000000;
+     background-color: #FFFFFF;
+     padding:0px 0px 25px 15px;
+     border:none;
+     }	
+     .news{
+font-size: 20px;
+color:blue;
+font-family:"Lemon/Milk";
+}
+.grey{
+text-align: left;
+border: 1px solid black;
+border-radius: 10px;
+background-color: lightgrey;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    align: center;
+} 
+.allevents{
+background-color: cornflowerblue;
+color: white;
+font-size: 20px;
+-webkit-transition-duration: 0.4s; 
+transition-duration: 0.4s;padding: 15px 32px;
+text-decoration: none;
+display: inline-block;
+} 
+
+.allevents:hover{
+background-color: darkblue;
+}
+.end{
+background-color: midnightblue;
+margin: 15px 0px;
+padding:5px 10px 5px 10px;
+color: white;
+margin-top:-20px;
+margin-left:-8px;
+margin-right:-8px;
+}
+
+.leftside 
+      {
+     float: left;
+     padding:5px 10px 5px 10px;
+     margin: 0px 0px;
+     width: 50%;
+     border: none;
+     color: white;
+     background-color: midnightblue;
+ min-height: 400px;
+margin-top:-20px;
+margin-left:-8px;
+     }
+
+.middle 
+      {
+     float:left;
+     
+     
+     width: 25%;
+     border: none;
+     color: white;
+     background-color: midnightblue;
+     min-height: 400px;
+margin-top:-20px;
+     }
+
+.rightside 
+      {
+/*float: left;*/
+     float: right;
+     padding:5px 0px 5px 10px;
+     margin: 0px 0px;
+     width: 25.51%;
+     height: auto;
+     border: none;
+     color: white;
+     background-color: midnightblue;
+ min-height: 400px;
+ 
+     }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#main_slideshow{
+	z-index: -1;
+}
+</style>
+</head>
+<body>
+	<div id="home">
+		<div id="home1">
+		<a href="index.html">	<img src="home.jpg" width="15px" height="15px"/></a>
+		&nbsp;|&nbsp;<a href="http://www.iitkgp.ac.in/about-iitkgp;jsessionid=4224623F7AE56DE5CFC6EEF103218A98
+		">About IIT Kharagpur</a> | <a href="http://www1.iitkgp.ac.in" target="blank">Old Website</a>
+		</div>
+		<p style="float:right">	<a href="http://www.rajbhasha.iitkgp.ac.in/">हिंदी में </a>&ensp;
+		</p>
+
+	</div>
+	<br>
+	<div id="div1">
+		<center>
+		<a href="index.html" id="id_iit_image"><img src="iit.png"/></a>
+	</center>
+	<ul>
+		<li ><a href="#"><span>ACADMICS</span> </a>
+			<ul>
+				<li><a href="#"><span>Admission +</span></a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/admission-ug"><span>UG</span></a></li>
+						<li><a href="http://www.iitkgp.ac.in/admission-pg"><span>PG</span></a></li>
+						<li><a href="http://www.iitkgp.ac.in/admission-phd"><span>Ph.D</span></a></li>
+						<li><a href="http://www.iitkgp.ac.in/welcome-freshers"><span>Welcome Freshers</span></a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span>Academic units +</a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/department/AE"><span>Departments</span></a></li>
+						<li><a href="http://www.iitkgp.ac.in/department/AT"><span>Centers</span></a></li>
+						<li><a href="http://www.iitkgp.ac.in/department/BS"><span>Schools</span></a></li>
+						<li><a href="http://www.iitkgp.ac.in/academics-library"><span>Library Facilities</span></a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span>Academic programs +</a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/academics-programs"><span>Programs</span></a></li>
+						<li><a href="https://erp.iitkgp.ac.in/ERPWebServices/curricula/specialisationList.jsp?stuType=UG"><span>UG Curricula</span></a></li>
+						<li><a href="https://erp.iitkgp.ac.in/ERPWebServices/curricula/specialisationList.jsp?stuType=PG"><span>PG Curricula</span></a></li>
+						<li><a href="http://www.iitkgp.ac.in/files/acad_cal1819.pdf"><span>Calender 18-19</span></a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.iitkgp.ac.in/#"><span>Inter-Disciplinary Programs</a></li>
+				<li><a href="http://www.iitkgp.ac.in/academic-international-relations"><span>International Relations</span></a></li>
+				<li><a href="http://www.iitkgp.ac.in/academics-post-doc-fellowships"><span>Post-Doctoral Fellowships</span></a></li>
+				<li><a href="http://www.iitkgp.ac.in/academics-continuing-education"><span>Continuing Education</span></a></li>
+				<li><a href="http://www.iitkgp.ac.in/academics-cer"><span>COE in Research</span></a></li>
+			</ul>
+		</li>
+		<li ><a href="#">RESEARCH </a>
+			<ul>
+				<li><a href="http://www.iitkgp.ac.in/research-areas">Research Areas</a></li>
+				<li><a href="http://www.iitkgp.ac.in/research-facilities">Research Facilities</a></li>
+				<li><a href="http://www.iitkgp.ac.in/research-initiatives">Research Initiaves</a></li>
+				<li><a href="http://www.iitkgp.ac.in/research-innovation">Innovations</a></li>
+				<li><a href="#">Enterpreneurship +</a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/research-enetrpreneuship-incubation">Incubation</a></li>
+						<li><a href="http://www.iitkgp.ac.in/research-enetrpreneuship-step">STEP</a></li>
+						<li><a href="http://www.iitkgp.ac.in/research-enetrpreneuship-ecell">E Cell</a></li>
+						<li><a href="http://www.iitkgp.ac.in/research-enetrpreneuship-academic">Academic Programs</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.iitkgp.ac.in/research-technology-developed">Technology Developed</a></li>
+				<li><a href="http://www.iitkgp.ac.in/research-ip-policies">IP Policies</a></li>
+				<li><a href="http://www.sric.iitkgp.ac.in/main.php">Sponsored Research</a></li>
+			</ul>
+		</li>
+		<li ><a href="#">STUDENTS </a>
+			<ul>
+				<li><a href="#">Admission +</a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/student-admission-ug">Under Graduate</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-admission-pg">Post Graduate</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-admission-phd">Ph. D</a></li>
+						<li><a href="http://www.iitkgp.ac.in/files/stu_ad.pdf">Rules and Regulations</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.iitkgp.ac.in/student-placement">Placements</a></li>
+				<li><a href="http://www.iitkgp.ac.in/student-achievements">Student Achievements</a></li>
+				<li><a href="http://www.iitkgp.ac.in/student-financial-assistance">Financial Assistance</a></li>
+				<li><a href="http://www.iitkgp.ac.in/student-prospective-students">Prospective Students</a></li>
+				<li><a href="http://www.iitkgp.ac.in/student-exchange-students">Exchange Students</a></li>
+				<li><a href="#">Student Life +</a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/student-activity-center">Student Activity Center
+						</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-sports-and-games">Sports and Games</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-social-and-cultural">Social and Cultural</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-techno-managament">Techno Management</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-events-and-festivals">Events and Festivals</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-hall-of-residence">Halls of Residence</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-health-and-wellness">Health and Wellness</a></li>
+						<li><a href="http://www.iitkgp.ac.in/student-eateries">Eateries</a></li>
+						<li><a href="http://www.iitkgp.ac.in/files/stu_insurance.pdf">Insurance</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.iitkgp.ac.in/student-news">Student News</a></li>
+				<li><a href="http://www.iitkgp.ac.in/hall-management-centre">Hall Management Centre</a></li>
+				<li><a href="http://www.iitkgp.ac.in/anti-ragging-measures">Anti-Ragging Measures</a></li>
+			</ul>
+		</li>
+		<li ><a href="#">FACULTY </a>
+			<ul>
+				<li><a href="http://www.iitkgp.ac.in/faculty-members-in-news">Faculty Members in News</a></li>
+				<li><a href="#">Prospective Faculty Members +</a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/faculty-why-joining-iitkgp">Why Join IIT-KGP</a></li>
+						<li><a href="https://erp.iitkgp.ernet.in/FacultyCareer/homeFacultyCareer.jsp">Job Openings</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.iitkgp.ac.in/faclistbydepartment">Faculty Directory</a></li>
+				<li><a href="#">Campus Services +</a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/faculty-health-and-wellness">Health & Wellness</a></li>
+						<li><a href="http://www.iitkgp.ac.in/faculty-school-for-children">Schools</a></li>
+						<li><a href="http://www.iitkgp.ac.in/faculty-bank-atm">Bank/ATM</a></li>
+						<li><a href="http://www.iitkgp.ac.in/campus-map">Campus Map</a>
+</li>
+					</ul>
+				</li>
+				<li><a href="#">Campus Life +</a>
+					<ul>
+						<li><a href="http://www.iitkgp.ac.in/faculty-campus-life-technology-club">Technology Club</a></li>
+						<li><a href="http://www.iitkgp.ac.in/faculty-campus-life-gym">Gym</a><br/></li>
+						<li><a href="http://www.iitkgp.ac.in/faculty-campus-life-aquatic-society">Aquatic Society</a></li>
+						<li><a href="http://www.iitkgp.ac.in/faculty-campus-life-technology-film-society">Technology Film Society</a></li>
+						<li><a href="http://www.iitkgp.ac.in/faculty-campus-life-events-festivals">Events and Festivals</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.iitkgp.ac.in/hod-list">Heads of Departments</a></li>
+			</ul>
+		</li>
+		<li ><a href="#">INDUSTRY </a>
+			<ul>
+				<li><a href="http://www.iitkgp.ac.in/industry-placements">Placements</a></li>
+				<li><a href="http://www.iitkgp.ac.in/industry-licensing">Licensing</a></li>
+				<li><a href="http://www.iitkgp.ac.in/industry-tech-devel">Technology Developed</a></li>
+				<li><a href="http://www.iitkgp.ac.in/industry-consultancy">Consultancies</a></li>
+				<li><a href="http://www.iitkgp.ac.in/industry-ip-policy">IP Policies</a></li>
+				<li><a href="http://www.sric.iitkgp.ac.in/index.php">Sponsored Research</a></li>
+				<li><a href="http://www.iitkgp.ac.in/csr-initiatives">CSR Initiatives</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+	<div class="slideshow-container" id="main_slideshow">
+<div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <a href="http://www.iitkgp.ac.in/alumni-news#231">
+
+    <img src="image1.png" width=1484 id="main_slideshow"></a>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <a href="http://www.iitkgp.ac.in/alumni-news#229">
+    <img src="image2.png" width=1484></a>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="image3.jpg" width=1484>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="image4.jpg" width=1484>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="image5.jpg" width=1484>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="image6.jpg" width=1484>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	<div id=menu>
+		<ul>
+			<li><a href="http://www.iitkgp.ac.in/iitkgp-announcements">ANNOUNCEMENTS</a></li>
+			<li><a href="http://www.iitkgp.ac.in/international-relations">INTERNATIONAL RELATIONS</a></li>
+			<li><a href="http://www.iitkgp.ac.in/iitkgp-alumni">ALUMNI</a></li>
+			<li><a href="http://www.iitkgp.ac.in/directors-desk">DIRECTOR'S DESK</a></li>
+		</ul>
+	</div>
+<div class="left_side">
+<hr>
+<div class="news">
+<b>
+NEWS</b>
+</div>
+<hr>
+<div class="boxed">
+<ul style="list-style-type:circle">
+<li><a href="http://www.iitkgp.ac.in/alumni-news#231">Distiguished Service Awards</a></li>
+<li><a href="http://www.iitkgp.ac.in/alumni-news#229">Alumni-Meet 2019</a></li>
+</ul>
+<hr>
+<div class="grey">
+<button class="allnews">
+<a href="http://www.iitkgp.ac.in/news">
+All News</a></button>
+<br/>
+<br/>
+</div>
+</div>
+</div>
+
+<div class="right_side">
+<hr>
+<div class="news">
+<b >
+EVENTS</b>
+</div>
+<hr>
+<div class="boxed" >
+<ul style="list-style-type:circle" class="scroll_content_event">
+<li><a href="https://shrey-kgp.github.io/hss-workshop/">Social Media, "becomings" and the Bio-Political Control</a> Oct 24 - 26 , 2018 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/CS/76">Internet of Things: Theory and Applications</a> Oct 24 - 28 , 2018 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/MA/32">Optimization Theory and Practice</a> Oct 26 - 30 , 2018</li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/BM/45">INSIGHTS FROM CUSTOMER REVIEWS</a> Oct 26 , 2018 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/ID/38">Sustainable Cities: Planning and Designing Infrastructure for Green Urban Mobility</a> Nov 1 - 3 , 2018 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/RT/106">SHORT TERM COURSE ON RUBBER TECHNOLOGY </a>Nov 12 - 15 , 2018</li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/MI/109">Techno-Economic Coal Mining & Coal Beneficiation in India</a> Nov 12 - 16 , 2018</li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/CR/126">Vacuum Technology</a> Nov 12 - 16 , 2018</li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/EF/98">Recent Trends in Industrial Pollution Control and Regulation</a> Nov 19 - 23 , 2018</li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/MA/82">Scientific Computing and Applications to Industrial Problems</a> Nov 19 - 23 , 2018</li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SP/2018-2019/EE/125">DISTRIBUTION SYSTEM PUMPED HYDRO AND SOLAR PV SYSTEM TECHNOLOGY</a> Nov 22 - 27 , 2018</li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/CON/CON/2018-2019/MA/81
+">International Conference on Applied and Computational Mathematics-2018 (ICACM-2018)</a> Nov 23 - 25 , 2018 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/EC/77">Devices and Circuits- A Journey from Conventional to Emerging</a> Nov 26 - 30 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/EC/68">Metamaterials -Design and Applications</a> Nov 26 - Dec 1 , 2018</li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/AQ/2018-2019/CR/117">Vacuum Technology and Process Applications</a> Dec 1 - 14 , 2018</li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/BM/87">PEOPLE ANALYTICS FOR ORGANIZATIONAL EXCELLENCE- HANDS ON TRAINING </a>Dec 3 - 7 , 2018</li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=CEP/GIC/18-19/MI/2229">Advanced Remote Sensing Techniques for Mine Environmental and Safety Monitoring</a> Dec 3 - 7 , 2018  </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/BM/60">Business Analytics for Managers Batch II </a>Dec 8 - 12 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/BM/58">MDP on Statistical Modelling for Data Analysis</a> Dec 10 - 15 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/AQ/2018-2019/ET/113">Academic Leadership, Innovative Pedagogy and Open Source Knowledge: Revisiting Teachers? Professional Development </a>Dec 10 - 16 , 2018</li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=CEP/GIC/18-19/CE/2231">Conventional and Intelligent Measures for Enhancing Road Safety</a> Dec 10 - 14 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=CEP/GIC/18-19/CE/2231">Conventional and Intelligent Measures for Enhancing Road Safety</a> Dec 10 - 14 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/ET/86">Control of Queues and other networked Systems</a> Dec 10 - 14 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/TQ/2018-2019/CH/30">Heterogeneous Catalysis for Chemical Engineers</a> Dec 10 - 14 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/BM/92">Project Management</a> Dec 12 - 14 , 2018 </li> 
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/HS/47">HR ANALYTICS: CONCEPTS AND APPLICATIONS</a> Dec 13 - 15 , 2018</li>
+<li><a href="iccar2018.in/">2nd International Conference on Contemporary Antimicrobial Research ICCAR 2018</a> Dec 15 - 17 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/NA/107">Large Eddy Simulations for Ship research</a> Dec 17 - 26 , 2018 </li>
+<li><a href="http://www.ae.iitkgp.ac.in/napc2018/index.php">National Aerospace Propulsion Conference (NAPC) 2018 </a>Dec 17 - 19 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/AQ/2018-2019/ME/115">International Conference on Management of Ergonomic Design, Industrial Safety and Healthcare Systems (MESH 2018)</a> Dec 20 - 23 , 2018 </li>
+<li><a href="http://www.iem.iitkgp.ac.in/mesh2018/#sponsor">International Conference MESH-2018 </a>Dec 20 - 23 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/AE/114">Composite materials</a> Dec 21 - 28 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/MI/123">VARIOUS PROBLEMS, ACCIDENTS, HAZARDS, SAFETY AND LEGISLATIONS</a> Dec 24 - 28 , 2018 </li>
+<li><a href="https://erp.iitkgp.ernet.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/AQ/2018-2019/CS/116">Algorithmic Toolbox for Big Data</a> Dec 24 - 30 , 2018 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SP/2018-2019/AR/127">Summer Study Abroad Course in India </a>Dec 30, 2018 - Jan 13, 2019</li> 
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/MI/101">Ethical and Legal Outsourcing Practices for India </a>Jan 3 - 7 , 2019</li> 
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/BM/96">Weekend Program on Data Analytics with R Programming </a>Jan 5 - Mar 2 , 2019 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/AQ/2018-2019/BM/118">Project Management</a> Feb 4 - 10 , 2019 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/AQ/2018-2019/IP/129">Biotechnology and Intellectual Property Rights </a>Feb 4 - 10 , 2019 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/CON/CON/2018-2019/BM/89">Management Doctoral Colloquium </a>Feb 6 - 7 , 2019</li> 
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/RT/91">RECENT ADVANCES IN RUBBER TECHNOLOGY</a> Feb 12 - 16 , 2019 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/AQ/2018-2019/MA/124">FOURIER SERIES TRANSFORM TECHNIQUES AND THEIR APPLICATIONS</a> Feb 24 - Mar 2 , 2019 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/CON/CON/2018-2019/CL/103">Climate Change Impacts, Vulnerabilities, and Adaptation: Emphasis on India and Neighbourhood (CCIVA 2019)</a> Feb 26 - Mar 2 , 2019</li> 
+<li>6th Molecular Virology Meeting 2019 Feb 28 - Mar 2 , 2019 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SS/2018-2019/MI/112">Risk assessment, safety management plan and accident prevention in mines</a> Mar 4 - 8 , 2019 </li>
+<li><a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/AQ/2018-2019/ID/110">Remote sensing, GIS and Image Processing using FOSS for Urban Planning</a> Mar 4 - 10 , 2019 </li>
+<li><a href="http://www.facweb.iitkgp.ac.in/~scp/">COMPOSITE MATERIAL</a> Jun 21 - 28 , 2019</li>
+<li><a href="http://www.iitkgp.ac.in/Under%20construction.">International Conference on Advances in Polymer Science And Rubber Technology </a>Sep 24 - 27 , 2019 </li>
+</ul>
+<hr>
+</div>
+<div class="grey">
+<button class="allevents">
+<a href="http://www.iitkgp.ac.in/events">
+All Events</a></button>
+<p style="float:right; font-size:20px;">
+<a href="https://erp.iitkgp.ac.in/CEP/courses.htm">Apply for CEP courses</a></p>
+<br/>
+<br/>
+</div>
+</div>
+
+<p style="clear:both"><br></p>
+
+<div class="end">
+<p style="float:left; font-size:20px; color:orange;">
+Admission</p>
+<p style="float:center; font-size:15px;font-family:"Calibri";">
+&ensp;	&ensp;	&ensp;  &ensp;  &ensp;
+<a href="http://www.iitkgp.ac.in/jpmm">JJPM</a>
+&ensp;	&ensp;	&ensp;  &nbsp;
+<a href="http://www.iitkgp.ac.in/academics-cer">CER</a>
+&ensp;	&ensp;
+<a href="https://www.jeeadv.ac.in/">JEE</a>
+&ensp;	&ensp;
+<a href="https://gate.iitkgp.ac.in/">GATE</a>
+&ensp;	&ensp;
+<a href="http://gate.iitkgp.ac.in/index.php?id=jam">JAM</a>
+&ensp;	&ensp; &nbsp;
+<a href="http://www.som.iitkgp.ac.in/home/pagesin/112">MBA</a>
+&ensp;	&ensp;
+<a href="http://www.iitkgp.ac.in/mtech-mcp">M.Tech</a>
+&ensp;	&ensp;
+<a href="http://www.iitkgp.ac.in/mcp-phd">MCP</a>
+&ensp;	&ensp;
+<a href="http://gate.iitkgp.ac.in/mmst">MMST</a>
+&ensp;	&ensp;
+<a href="http://www.iitkgp.ac.in/mhrm">MHRM</a>
+&ensp;	&ensp;
+<a href="http://www.gian.iitkgp.ac.in/">GIAM</a>
+&ensp;	&ensp;
+<a href="http://www.cep.iitkgp.ac.in/cep/">CEP</a>
+&ensp;	&ensp;
+<a href="http://www.iitkgp.ac.in/pgdba">PGDBA</a>
+&ensp;	&ensp;
+<a href="http://www.cep.iitkgp.ac.in/cep/">QIP</a>
+<br/>
+&ensp;	&ensp;	&ensp;  &ensp;  &ensp;
+<a href="http://www.iitkgp.ac.in/intpbs">INTPBS</a>
+&ensp;	&ensp;
+<a href="http://www.iitkgp.ac.in/phd">Ph.D</a>
+&ensp;	&ensp;
+<a href="http://www.iitkgp.ac.in/law">LLB</a>
+&ensp;	&ensp;
+<a href="http://www.cep.iitkgp.ac.in/cep/">KDP</a>
+&ensp;	&ensp;
+<a href="http://www.cep.iitkgp.ac.in/cep/">TEQIP</a>
+&ensp;	&ensp;
+<a href="http://www.iitkgp.ac.in/llm">LLM</a>
+&ensp;	&ensp;
+<a href="http://www.som.iitkgp.ac.in/home/pagesin/113">EMBA</a>
+&ensp;	&ensp; &nbsp;
+<a href="http://www.iitkgp.ac.in/pdf">PDF</a>
+&ensp;	&ensp;
+<a href="http://www.iitkgp.ac.in/mipp">MIPP</a>
+<br/>
+<br/>
+</p>
+<p style="clear:both"></p>
+</div>
+</div>
+<div class="clearfix">
+<div class="leftside">
+<div style="font-size:20px; color:orange;">
+Quick Links</div>
+
+<hr>
+<table style="width:100%">
+  <tr>
+    <ul style="list-style-type:circle">
+    <td><li><a href="http://www.apna.iitkgp.ac.in/">Apna IIT KGP</li></td>
+    <td><a href="https://erp.iitkgp.ac.in/SSOAdministration/login.htm?sessionToken=79E6A55A13F323B29371C0C63F3E20FF.worker1&requestedUrl=https://erp.iitkgp.ac.in/IIT_ERP3/">ERP</a></td> 
+    <td><a href="http://www.iitkgp.ac.in/media">Media</a></td>
+</ul>
+  </tr>
+  <tr>
+<ul style="list-style-type:circle">
+    <td><li><a href="http://www.iitkgp.ac.in/files/acad_cal1819.pdf">Academic Calender 18-19</a></li></td>
+    <td><a href="https://erp.iitkgp.ac.in/StudentPerformanceV2/auth/login.htm">For Parents/Guardians</a></td>
+    <td><a href="http://www.iitkgp.ac.in/chair-professor-nomination">Nomination for Chair Professor</a></td>
+</ul>
+  </tr>
+  <tr>
+<ul style="list-style-type:circle">
+    <td><li><a href="http://www.iitkgp.ac.in/iitkgp-announcements">Announcements</a></li></td>
+    <td><a href="http://www.iitkgp.ac.in/former-employees">Former Employees</a></td>
+    <td><a href="http://www.iitkgp.ac.in/non-teaching-positions">Non-teaching Positions</a></td>
+</ul>
+  </tr>
+  <tr>
+<ul style="list-style-type:circle">
+    <td><li><a href="https://erp.iitkgp.ac.in/ERPWebServices/curricula/specialisationList.jsp?stuType=UG">Academic Curriculum (UG)</a></li></td>
+    <td><a href="http://www.iitkgp.ac.in/for-students">For Students</a></td>
+    <td><a href="http://www.iitkgp.ac.in/rajbhasha/">Rajbhasha Vibhaag</a></td>
+</ul>
+  </tr>
+<tr>
+<ul style="list-style-type:circle">
+    <td><li><a href="https://erp.iitkgp.ac.in/ERPWebServices/curricula/specialisationList.jsp?stuType=PG">Academic Curriculum (PG)</a></li></td>
+<td><a href="https://erp.iitkgp.ac.in/FacultyCareer/advtFacultyRecruitment.jsp">Faculty Openings</a></td>
+<td><a href="https://erp.iitkgp.ac.in/SupplierFacilities/login.htm">Vendor Registration under GST</a></td>
+</ul>
+</tr>
+<tr>
+<ul style="list-style-type:circle">
+    <td><li><a href="http://www.dak.iitkgp.ernet.in/phd/">Doctorates Info System</a></li></td>
+<td><a href="http://www.tgh.iitkgp.ac.in/">Guest Houses</a></td>
+<td><a href="http://www.sric.iitkgp.ac.in/main.php">Sponsored Research</a></td>
+</ul>
+</tr>
+<tr>
+<ul style="list-style-type:circle">
+    <td><li><a href="http://www.counsellingcentre.iitkgp.ac.in/">Counselling Centre</a></li></td>
+<td><a href="http://www.iitkgp.ac.in/holidays">Holidays</a></td>
+<td><a href="http://www.iitkgp.ac.in/temporary-jobs">Job Openings</a></td>
+</ul>
+</tr>
+<tr>
+<ul style="list-style-type:circle">
+    <td><li><a href="https://erp.iitkgp.ac.in/DupCertReqPortal/auth/welcome.htm">Degree Verifications/Transcripts/Certificates</a></li></td>
+<td><a href="http://www.iitkgp.ac.in/internal-complaints-committee">Internal Complaints Committee</a></td>
+<td><a href="http://www1.iitkgp.ac.in/topfiles/tenders.php">Tenders</a></td>
+</ul>
+<tr>
+<td><a href="http://www.apna.iitkgp.ac.in/">Internal Website</a></td>
+<td><a href="https://iitkgpmail.iitkgp.ac.in/">Web Mail</a></td>
+</tr>
+<tr>
+<ul style="list-style-type:circle">
+    <td><li><a href="http://www.library.iitkgp.ac.in/">Central Library</a></li></td>
+<td><a href="https://international.iitkgp.ac.in/mou/">International MOU</a></td>
+</ul>
+</tr>
+</table>
+</div>
+
+<div class="middle">
+<p style="font-size:20px; color:orange;">
+Contact Us</p>
+<hr>
+Indian Institute of Technology Kharagpur<br/>
+Kharagpur, India- 721302<br/>
+Phone: <u>+91-3222-255221</u><br/>
+FAX: +91-3222-255303<br/>
+<a href="http://www.iitkgp.ac.in/how-to-reach">How to Reach</a>
+<br/>
+<a href="http://www.iitkgp.ac.in/campus-map">Campus Map</a>
+<br/>
+<a href="http://www.iitkgp.ac.in/files/comdir.pdf">Communication Directory</a>
+<br/>
+<a href="http://www.iitkgp.ac.in/welcome-freshers">Welcome Freshers</a>
+</div>
+
+<div class="rightside">
+<p style="font-size:20px; color:orange;">
+Social Connect</p>
+<hr>
+<a href="https://www.facebook.com/IIT.Kgp">
+<img src="social-facebook-button-blue-icon.png" width=30 height=30 style="float:left"/></a>
+&ensp;
+<a href="https://www.linkedin.com/school/indian-institute-of-technology-kharagpur/">
+<img src="LinkedIn.png" width=30 height=30 style="float:left"/></a>
+&ensp;
+<a href="https://www.youtube.com/channel/UCQCLWAILNrEVemERg4ybAYQ">
+<img src="Youtube.png" width=30 height=30 style="float:left"/></a>
+<p style="clear:both"><br/></p>
+<p style="font-size:20px; color:orange;">
+External Links</p>
+<hr>
+<a href="https://www.nvsp.in/">
+<img src="nvsp3.png"></a>
+<h3>
+<a href="http://www.iitkgp.ac.in/nirf">N I R F</a><br/>
+<a href="https://www.vidyalakshmi.co.in/Students">Vidya Lakshmi Portal</a><br/>
+<a href="https://www.pmrf.in/">Prime Minister's Research Fellowship (PMRF)</a>
+</h3>
+</div>
+</div>
+
+<p style="clear:both"></p>
+
+<div class="end1">
+<hr>
+<p style="float:left">&copy; 2016 Indian Institute of Technology Kharagpur</p>
+<p style="float:right">
+<a href="http://www.iitkgp.ac.in/right-to-information">RTI</a>
+&nbsp;|&nbsp;
+<a href="http://www.iitkgp.ac.in/campus-weather">Campus Weather</a>
+&nbsp;|&nbsp;
+<a href="http://www.iitkgp.ac.in/feedback">Feedback</a>
+&nbsp;|&nbsp;
+<a href="http://www.iitkgp.ac.in/legal-disclaimer">Legal Disclaimer</a>
+&nbsp;|&nbsp;
+<a href="http://www.gmail.com">Webmaster</a>
+&nbsp;|&nbsp;
+<a href="http://www.iitkgp.ac.in/sitemap">SiteMap</a>
+&nbsp;|
+</p>
+<p style="clear:both"></p>
+</div>
+</body>
+</html>
